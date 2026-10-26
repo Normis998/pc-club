@@ -1,0 +1,36 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #0f172a; color: #e2e8f0; min-height: 100vh;
+    display: flex; flex-direction: column;
+}
+header {
+    background: #1e293b; padding: 1rem 2rem; border-bottom: 1px solid #334155;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+}
+header a { color: #e2e8f0; text-decoration: none; }
+.logo { font-size: 1.4rem; font-weight: 700; color: #38bdf8; }
+nav a { margin-left: 1.2rem; transition: color .2s; }
+nav a:hover { color: #38bdf8; }
+main { flex: 1; padding: 2rem; max-width: 1200px; margin: 0 auto; width: 100%; }
+h1 { margin-bottom: 1.5rem; color: #38bdf8; }
+.pc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1rem; }
+.pc-card {
+    background: #1e293b; border: 1px solid #334155; border-radius: 10px;
+    padding: 1.2rem; transition: transform .15s, border-color .15s;
+}
+.pc-card:hover { transform: translateY(-3px); border-color: #38bdf8; }
+.pc-card h3 { color: #38bdf8; margin-bottom: .5rem; }
+.pc-card p { color: #94a3b8; font-size: .9rem; margin-bottom: .8rem; }
+.badge { display: inline-block; padding: .2rem .6rem; border-radius: 6px; font-size: .75rem; font-weight: 600; }
+.badge.available { background: #14532d; color: #86efac; }
+.badge.maintenance { background: #7c2d12; color: #fca5a5; }
+.btn {
+    display: inline-block; padding: .6rem 1.2rem; background: #38bdf8; color: #0f172a;
+    text-decoration: none; border-radius: 6px; border: none; cursor: pointer;
+    font-weight: 600; transition: background .15s;
+}
+.btn:hover { background: #0ea5e9; }
+footer { text-align: center; padding: 1rem; color: #64748b; border-top: 1px solid #334155; }
+input, select { width: 100%; padding: 0.5rem; margin-top: 0.3rem; border-radius: 5px; border: 1px solid #334155; background: #0f172a; color: #fff; }
+.badge.busy { background: #991b1b; color: #fca5a5; }
